@@ -1,4 +1,11 @@
+let message = document.getElementById("message_received");
+let intents = document.getElementById("intents");
+
+
 function play_encerta(){
+    intents.innerText = `Intentos: 0`;
+    message.innerText = "";
+
     let random = Math.floor(Math.random() * 11);//Floor no usa decimales.
     let div_numero = document.getElementById("div_numero");
     div_numero.innerText = random;
